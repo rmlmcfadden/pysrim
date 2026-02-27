@@ -23,4 +23,5 @@ jobs:
         run: python3 -m build -w
       - uses: actions/upload-artifact@v4
         with:
+          name: pysrim-${{ matrix.python-version }}
           path: ./dist/*.whl
